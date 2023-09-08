@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&family=Rajdhani&display=swap');
+
+:root{
+    --cor-primaria: #000;
+    --cor-secundaria: burlywood;
+    --cor-tercearia: #22d4fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: burlywood;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho_link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+}
+
+.area-principal {
+    padding: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
+.textos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+h1 {
+    font-size: 2.25rem;
+    font-family: 'Dancing Script';
+}
+.texto1 {
+    font-size: 1.5rem;
+    font-family: 'Rajdhani';
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.meus_links {
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+
+.link_contato {
+    border: 2px solid var(--cor-tercearia);
+    width: 60%;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f6f6;
+    gap: 12px;
+}
+
+.link_contato:hover {
+    background-color: #272727;
+}
+
+.imagens_link {
+    width: 20px;
+    height: 20px;
+}
+
+.apresentacao_img {
+    width: 50%;
+}
+
+img:hover {
+    width: 320px;
+    height: 350px;
+}
+
+.rodape {
+    padding: 15px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 850px) {
+    .area-principal {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+
+    .textos {
+        width: auto;
+    }
+}
